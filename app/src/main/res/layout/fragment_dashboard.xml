@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="dashboardViewModel"
+            type="swing.dev.cats.ui.dashboard.DashboardViewModel"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        tools:context=".ui.dashboard.DashboardFragment"
+        style="@style/ParentView">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_image"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:visibility="gone"
+            android:id="@+id/loader"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:indicatorColor="@color/lightText"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            android:layout_marginTop="@dimen/large_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/large_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                style="@style/MediumTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Error"
+                android:gravity="center"
+                android:text="@{dashboardViewModel.error}"/>
+
+            <Button
+                style="@style/FX45Button"
+                android:id="@+id/btnRetry"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:layout_gravity="center"
+                android:text="@string/retry"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
