@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Cats</string>
+    <string name="cats_error">Sorry there was a problem getting images, please check your connection and try again</string>
+    <string name="Cats">Cats</string>
+    <string name="retry">Retry</string>
 </resources>
