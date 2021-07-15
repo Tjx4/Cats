@@ -1,7 +1,7 @@
 package swing.dev.cats.repository
 
 import swing.dev.cats.models.Cat
-import com.entersekt.shopfinder.networking.retrofit.RetrofitHelper
+import swing.dev.cats.retrofit.RetrofitHelper
 
 class CatService(private val retrofitHelper: RetrofitHelper) {
     suspend fun search(limit: Int, page:Int): List<Cat>?{

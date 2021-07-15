@@ -1,7 +1,6 @@
 package swing.dev.cats
 
 import android.app.Application
-import com.entersekt.shopfinder.di.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import swing.dev.cats.di.*

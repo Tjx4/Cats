@@ -1,4 +1,4 @@
-package com.entersekt.shopfinder.networking.retrofit
+package swing.dev.cats.retrofit
 
 import swing.dev.cats.models.Cat
 import retrofit2.http.*

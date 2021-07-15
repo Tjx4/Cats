@@ -1,7 +1,7 @@
 package com.entersekt.outlets.retrofit
 
 import com.entersekt.shopfinder.networking.retrofit.Hosts
-import com.entersekt.shopfinder.networking.retrofit.RetrofitHelper
+import swing.dev.cats.retrofit.RetrofitHelper
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

@@ -4,7 +4,7 @@
     <data>
         <variable
             name="dashboardViewModel"
-            type="com.entersekt.shopfinder.ui.dashboard.DashboardViewModel"/>
+            type="swing.dev.cats.ui.dashboard.DashboardViewModel"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

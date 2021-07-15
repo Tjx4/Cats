@@ -43,19 +43,9 @@ abstract class BaseDialogFragment : DialogFragment() {
         }
     }
 
-    open fun hideLoaderAndShowEnterMessage() {
-
-    }
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         activity = context as AppCompatActivity?
-    }
-
-    protected fun setListviewClickEvents(listView: ListView) {
-        listView.setOnItemClickListener { parent, view, position, id ->
-            onFragmentViewClickedEvent(view)
-        }
     }
 
     protected fun onFragmentViewClickedEvent(view: View) {
