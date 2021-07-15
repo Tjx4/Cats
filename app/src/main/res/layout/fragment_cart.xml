@@ -26,8 +26,8 @@
             android:layout_height="40dp"
             android:layout_margin="@dimen/small_margin"
             android:src="@drawable/ic_close"
-            android:padding="2dp"
-            android:background="@color/transBlack"
+            android:padding="6dp"
+            android:background="@drawable/cp_background"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
